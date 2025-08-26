@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { GoArrowLeft } from "react-icons/go";
-import vector from '../assets/vector.svg'
+import vector from '../assets/Vector.svg'
 import search from "../assets/search.svg"
 import user from "../assets/user.svg"
 import bag from "../assets/bag.PNG"
@@ -101,5 +101,6 @@ const Navbar = () => {
     </>
   )
 }
+
 
 export default Navbar
