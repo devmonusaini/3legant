@@ -16,7 +16,7 @@ const Cart = () => {
   return (
     <>
       <div className='max-w-[1240px] mx-auto px-4 md:py-10 py-6 flex justify-center items-center flex-col'>
-        <div className='w-full mt-10 flex justify-center items-center flex-col '>
+        <div className='w-full sm:mt-10 flex justify-center items-center flex-col '>
           <h1 className='w-full md:leading-[56px] text-2xl sm:text-4xl md:text-5xl font-medium text-center text-secondary'>
             Cart
           </h1>
@@ -224,3 +224,4 @@ const Cart = () => {
 }
 
 export default Cart;
+
