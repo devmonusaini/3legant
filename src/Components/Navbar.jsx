@@ -9,6 +9,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import CartSidebar from './CartSidebar';
+
 import Login from './Login';
 const Navbar = () => {
 
@@ -34,7 +35,7 @@ const Navbar = () => {
         <div className=" max-w-[1240px] h-[60px] mx-auto flex justify-between items-center px-4 py-2 bg-primary font-poppins">
           <div className='flex justify-center items-center flex-row gap-2'>
             <button className='md:hidden block ' onClick={() => setIsOpen(true)}><IoIosMenu /></button>
-            <h1 className=" text-[16px] md:text-[24px] font-bold">3legant</h1>
+            <h1 className=" text-[20px] md:text-[24px] font-bold">3legant</h1>
           </div>
 
           <ul className="md:flex hidden gap-8">
@@ -44,11 +45,11 @@ const Navbar = () => {
             <Link to="/contact-us" className="cursor-pointer text-secondary text-[14px] font-normal">Contact Us</Link >
           </ul>
           <div className='flex justify-center items-center flex-row  gap-1 md:gap-2 text-secondary  font-bold'>
-            <div className='w-[16px] md:w-[24px] h-[16px] md:h-[24px]'> <img src={search} alt="" /></div>
-            <button onClick={() => setLoginOpen(true)} className='w-[16px] md:w-[24px] h-[16px] md:h-[24px]'> <img src={user} alt="" /></button>
+            <div className='w-[20px] md:w-[24px] h-[20px] md:h-[24px]'> <img src={search} alt="" /></div>
+            <button onClick={() => setLoginOpen(true)} className='w-[20px] md:w-[24px] h-[20px] md:h-[24px]'> <img src={user} alt="" /></button>
 
-            <button onClick={() => setShowCart(true)} className='w-[16px] md:w-[24px] h-[16px] md:h-[24px]'> <img src={bag} alt="" /></button>
-            <div className='w-[14px] md:w-[22px] h-[14px] md:h-[22px] bg-secondary flex justify-center items-center rounded-full '> <span className='text-primary md:text-sm text-[8px]'> 2</span></div>
+            <button onClick={() => setShowCart(true)} className='w-[20px] md:w-[24px] h-[20px] md:h-[24px]'> <img src={bag} alt="" /></button>
+            <div className='w-[18px] md:w-[22px] h-[18px] md:h-[22px] bg-secondary flex justify-center items-center rounded-full '> <span className='text-primary md:text-sm text-[10px]'> 2</span></div>
 
 
           </div>
@@ -75,14 +76,14 @@ const Navbar = () => {
               </button>
             </div>
             <ul className="flex flex-col gap-4 mt-4 px-5 justify-start items-start">
-              <li className="cursor-pointer text-secondary text-[14px] font-normal">Home</li>
-              <li className="cursor-pointer text-secondary text-[14px] font-normal flex justify-center flex-row items-center gap-2">
+              <Link  to="/" onClick={()=>setIsOpen(false)} className="cursor-pointer text-secondary text-[14px] font-normal">Home</Link>
+              <Link  onClick={()=>setIsOpen(false)} className="cursor-pointer text-secondary text-[14px] font-normal flex justify-center flex-row items-center gap-2">
                 Shop <span className="text-sm"><IoIosArrowDown /></span>
-              </li>
-              <li className="cursor-pointer text-secondary text-[14px] font-normal flex justify-center flex-row items-center gap-2">
+              </Link>
+              <Link to="/product-details" onClick={()=>setIsOpen(false)} className="cursor-pointer text-secondary text-[14px] font-normal flex justify-center flex-row items-center gap-2">
                 Product <span className="text-sm"><IoIosArrowDown /></span>
-              </li>
-              <li className="cursor-pointer text-secondary text-[14px] font-normal">Contact Us</li>
+              </Link>
+              <Link to="contact-us" onClick={()=>setIsOpen(false)} className="cursor-pointer text-secondary text-[14px] font-normal">Contact Us</Link>
             </ul>
           </div>
         </div>
@@ -102,6 +103,4 @@ const Navbar = () => {
   )
 }
 
-
 export default Navbar
-
