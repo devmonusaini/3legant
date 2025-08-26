@@ -3,7 +3,7 @@ import { GoArrowLeft } from "react-icons/go";
 import vector from '../assets/Vector.svg'
 import search from "../assets/search.svg"
 import user from "../assets/user.svg"
-import bag from "../assets/bag.PNG"
+import bag from "../assets/bag.png"
 import { TfiClose } from "react-icons/tfi";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";
@@ -104,3 +104,4 @@ const Navbar = () => {
 
 
 export default Navbar
+
