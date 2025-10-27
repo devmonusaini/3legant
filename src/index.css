@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --color-brandbg: #38CB89;
+  --color-brand: #000000;
+  --color-brandtext: #28303F;
+  --color-primary:  #FFFFFF;
+  --color-secondary: #141718;
+  --card-background: #F3F5F7;
+  --color-border : #6C7275;
+}
+
+[data-theme="dark"] {
+  --color-primary: #0F172A;
+  --color-secondary: #7C3AED;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: "Outfit", sans-serif;
+}
+
+.heading {
+  font-size: clamp(32px, 5vw, 64px);
+  line-height: clamp(32px, 6vw, 68px);
+}
+.heading-category{
+font-size: clamp(32px, 5vw, 36px);
+  line-height: clamp(32px, 6vw, 40px);
+}
+
+.scroll-hidden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
